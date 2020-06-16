@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+  <% if  @book.avatar.attached? %>
+ 
+  <img src="<%=(url_for(@book.avatar))%>" alt="Girl in a jacket" width="200" height="300">
+  <% end %>
+
+
+<p>
+  <strong>Name:</strong>
+  <%= @book.name %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @book.city %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @book.location %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @book.description %>
+</p>
+
+<p>
+  <strong>Cat1:</strong>
+  <%= @book.cat1 %>
+</p>
+
+<p>
+  <strong>Cat2:</strong>
+  <%= @book.cat2 %>
+</p>
+
+<p>
+  <strong>Subcat:</strong>
+  <%= @book.subcat %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @book.price %>
+</p>
+
+<p>
+  <strong>Mobile:</strong>
+  <%= @book.mobile %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @book.email %>
+</p>
+
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>
